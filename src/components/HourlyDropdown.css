@@ -10,10 +10,8 @@
   padding: 0.5rem 1rem;
   border-radius: 0.25rem;
   align-items: center;
-  justify-self: flex-end;
-  transition: background 0.2s 0s ease-in-out;
-
   margin-left: auto;
+  transition: background 0.2s 0s ease-in-out;
 }
 
 .weekdays-dropdown > button:hover {
