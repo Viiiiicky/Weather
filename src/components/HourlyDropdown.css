@@ -12,6 +12,8 @@
   align-items: center;
   justify-self: flex-end;
   transition: background 0.2s 0s ease-in-out;
+
+  margin-left: auto;
 }
 
 .weekdays-dropdown > button:hover {
