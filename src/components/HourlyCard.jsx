@@ -4,7 +4,7 @@ import "./HourlyCard.css";
 function HourlyCard({ item, index }) {
   return (
     <>
-      <div key={index} className="hourly-report-card">
+      <div className="hourly-report-card">
         <img
           className="hourly-report-icon"
           src={weatherCodeImgMap[item.code]}

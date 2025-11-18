@@ -23,11 +23,7 @@ function DailyReport({ daily }) {
         </div>
         <div className="daily-report-content">
           {dailyList.map((item, index) => {
-            return (
-              <>
-                <DailyCard key={item.date} item={item} index={index} />
-              </>
-            );
+            return <DailyCard key={item.date} item={item} index={index} />;
           })}
         </div>
       </section>

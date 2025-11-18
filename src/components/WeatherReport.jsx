@@ -14,8 +14,6 @@ function WeatherReport({ activeCity, units }) {
     queryFn: () => getGeoInfo(activeCity),
   });
 
-  console.log(geoData);
-
   const latitude = geoData?.results?.[0]?.latitude;
   const longitude = geoData?.results?.[0]?.longitude;
 
@@ -34,7 +32,6 @@ function WeatherReport({ activeCity, units }) {
     //========本次修改隱藏的=======
     // enabled: !!geoData,
   });
-  console.log(weatherData);
 
   // 還有輸入不存在的地名要顯示提示文字
 

@@ -86,8 +86,6 @@ function UnitDropdown({ units, setUnits }) {
     },
   ];
 
-  console.log(unitGroups);
-
   return (
     <>
       <div className="units-dropdown" ref={dropdownRef}>
@@ -110,36 +108,30 @@ function UnitDropdown({ units, setUnits }) {
             {unitGroups.map((item) => {
               const currentUnitValue = item.getCurrentUnits(units);
               return (
-                <>
-                  <div className="unit-type-div" key={item.label}>
-                    <p className="unit-type-label">{item.label}</p>
+                <div className="unit-type-div" key={item.label}>
+                  <p className="unit-type-label">{item.label}</p>
 
-                    {item.options.map((option) => {
-                      return (
-                        <>
-                          <button
-                            key={option.value}
-                            className={`dropdown-items ${
-                              currentUnitValue === option.value
-                                ? "selected"
-                                : ""
-                            }`}
-                            onClick={() => handleUnitClick(option.value)}
-                          >
-                            <span className="dropdown-items-label">
-                              {option.label}
-                            </span>
-                            <span className="item-checked">
-                              {currentUnitValue === option.value && (
-                                <IoCheckmarkSharp />
-                              )}
-                            </span>
-                          </button>
-                        </>
-                      );
-                    })}
-                  </div>
-                </>
+                  {item.options.map((option) => {
+                    return (
+                      <button
+                        key={option.value}
+                        className={`dropdown-items ${
+                          currentUnitValue === option.value ? "selected" : ""
+                        }`}
+                        onClick={() => handleUnitClick(option.value)}
+                      >
+                        <span className="dropdown-items-label">
+                          {option.label}
+                        </span>
+                        <span className="item-checked">
+                          {currentUnitValue === option.value && (
+                            <IoCheckmarkSharp />
+                          )}
+                        </span>
+                      </button>
+                    );
+                  })}
+                </div>
               );
             })}
           </div>

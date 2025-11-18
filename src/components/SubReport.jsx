@@ -21,6 +21,7 @@ function SubReport({ current, units }) {
       <section className="sub-report-section">
         {fields.map(({ label, key, type }) => (
           <SubCard
+            key={type}
             units={units}
             label={label}
             value={current?.[key]}

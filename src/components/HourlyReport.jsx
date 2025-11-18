@@ -22,7 +22,7 @@ function HourlyReport({ hourly }) {
         </div>
         <div className="hourly-report-content">
           {data[selectedDate]?.map((item, index) => {
-            return <HourlyCard item={item} index={index} />;
+            return <HourlyCard key={item.hour} item={item} index={index} />;
           })}
         </div>
       </section>
