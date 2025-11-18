@@ -1,0 +1,86 @@
+.weekdays-dropdown {
+  /* background: red; */
+  position: relative;
+  /* border: 2px solid rgb(144, 169, 74); */
+}
+
+.weekdays-dropdown > button {
+  display: flex;
+  background: var(--Neutral-600);
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  align-items: center;
+  justify-self: flex-end;
+  transition: background 0.2s 0s ease-in-out;
+}
+
+.weekdays-dropdown > button:hover {
+  background: var(--Neutral-700);
+}
+
+.hourly-dropdown-items {
+  border-radius: 0.5rem;
+  display: block;
+  background: none;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem 0;
+  transition: background 0.3s 0s ease-out;
+  /* border: 2px solid khaki; */
+}
+
+.hourly-dropdown-items:hover {
+  background: var(--Neutral-700);
+  /* border: 2px solid khaki; */
+}
+
+.hourly-dropdown-items:last-of-type {
+  margin-bottom: 0;
+}
+
+.select-weekdays {
+  display: none;
+  background: var(--Neutral-800);
+  right: 0;
+  top: calc(100% + 1rem);
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid var(--Neutral-700);
+  border-radius: 0.5rem;
+  box-shadow: 0px 1px 5px 0px var(--Neutral-1000);
+}
+
+.show {
+  display: block;
+  position: absolute;
+  z-index: 1;
+}
+
+.selected {
+  background: var(--Neutral-600);
+}
+
+/* 1200px / 16px = 75em */
+@media (max-width: 75em) {
+}
+
+/* 980px / 16px = 61.25em */
+@media (max-width: 61.25em) {
+  .select-weekdays {
+    width: 40%;
+  }
+}
+
+/* 600px / 16px = 37.5em */
+@media (max-width: 37.5em) {
+  .select-weekdays {
+    width: 60%;
+  }
+}
+
+/* 460px / 16px = 28.75em */
+@media (max-width: 28.75em) {
+  .select-weekdays {
+    width: 100%;
+  }
+}

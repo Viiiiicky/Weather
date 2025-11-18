@@ -1,0 +1,132 @@
+.search-section {
+  width: 100%;
+  /* background-color: rgba(255, 0, 149, 0.403); */
+  margin: 2rem auto 3rem;
+}
+
+.search-title {
+  color: var(--Neutral-0);
+  text-align: center;
+  font-size: 5.2rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+
+.searchbar-wrapper {
+  width: 60%;
+  margin: 0 auto;
+  /* border: 2px solid salmon; */
+}
+
+.search-section form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.input-wrapper {
+  flex: 10;
+  margin-right: 2rem;
+  position: relative;
+}
+
+.search-input {
+  height: 4rem;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0 1rem;
+  width: 100%;
+  outline: 3px solid transparent;
+  transition: outline 0.3s 0s ease-in-out;
+}
+
+.search-input:focus {
+  outline: 3px solid var(--Blue-500);
+}
+
+.search-button {
+  display: block;
+  background: var(--Blue-500);
+  border-radius: 0.5rem;
+  padding: 0 3rem;
+  font-size: 1.4rem;
+  height: 4rem;
+  flex: 1;
+  transition: background 0.2s 0s ease-in-out;
+}
+
+.search-button:hover {
+  background: var(--Blue-700);
+}
+
+.search-results {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  top: calc(100% + 1.5rem);
+  display: flex;
+  flex-direction: column;
+  border: 2px solid var(--Neutral-700);
+  background-color: var(--Neutral-800);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.search-result-items {
+  /* background: var(--Neutral-700);*/
+  border: 1px solid transparent;
+  margin: 0.5rem 0;
+  padding: 1rem 0.5rem;
+  font-size: 1.6rem;
+  text-align: left;
+  border-radius: 0.5rem;
+  flex: 1;
+  transition: background 0.3s 0s ease-out, border 0.3s 0s ease-out;
+}
+
+.search-result-items:hover {
+  background: var(--Neutral-700);
+  border: 1px solid var(--Neutral-600);
+}
+
+/* 1200px / 16px = 75em */
+@media (max-width: 75em) {
+}
+
+/* 980px / 16px = 61.25em */
+@media (max-width: 61.25em) {
+  .searchbar-wrapper {
+    width: 80%;
+  }
+}
+
+/* 600px / 16px = 37.5em */
+@media (max-width: 37.5em) {
+  .searchbar-wrapper {
+    width: 100%;
+  }
+  .search-section form {
+    display: block;
+  }
+
+  .search-results {
+    top: calc(100%);
+  }
+  .input-wrapper {
+    width: 100%;
+  }
+
+  .search-input {
+    margin: 2rem 0;
+    /* margin: 1.5rem 0; */
+  }
+
+  .search-button {
+    width: 100%;
+    /* height: 4rem; */
+  }
+}
+
+/* 460px / 16px = 28.75em */
+@media (max-width: 28.75em) {
+}

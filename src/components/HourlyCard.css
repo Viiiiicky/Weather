@@ -1,0 +1,22 @@
+.hourly-report-card {
+  background-color: var(--Neutral-700);
+  border: 2px solid var(--Neutral-600);
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  position: relative;
+  font-size: 1.4rem;
+}
+
+.hourly-report-icon {
+  width: 4rem;
+}
+
+.hourly-report-time {
+}
+
+.hourly-report-temp {
+  position: absolute;
+  right: 1rem;
+}

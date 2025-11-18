@@ -1,0 +1,42 @@
+.weather-report-section {
+  /* background-color: rgba(136, 222, 131, 0.4); */
+  /* border: 2px solid #5732db; */
+  display: grid;
+  grid-template-columns: 2fr 0.8fr;
+  gap: 2rem;
+}
+
+.left-column {
+  /* border: 2px solid #dbdb32; */
+  display: grid;
+  grid-template-rows: repeat(auto-fit);
+  gap: 2rem;
+}
+
+.right-column {
+  /* border: 2px solid #b05462; */
+  border-radius: 1rem;
+  padding: 1rem;
+  background: var(--Neutral-800);
+}
+
+/* 1200px / 16px = 75em */
+@media (max-width: 75em) {
+}
+
+/* 980px / 16px = 61.25em */
+@media (max-width: 61.25em) {
+  .weather-report-section {
+    /* background-color: rgba(18, 18, 18, 0.4); */
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .left-column {
+    gap: 3rem;
+  }
+}
+
+/* 460px / 16px = 28.75em */
+@media (max-width: 28.75em) {
+}

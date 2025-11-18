@@ -1,0 +1,57 @@
+.hourly-report-section {
+  height: 100%;
+}
+
+.hourly-report-nav {
+  display: flex;
+  padding: 0.5rem 1rem 1rem;
+
+  align-items: center;
+}
+
+.hourly-report-nav .report-title {
+  flex: 1;
+}
+
+.hourly-report-nav > div {
+  flex: 1;
+}
+
+.hourly-report-content {
+  max-height: 50rem;
+  overflow-y: scroll;
+  padding: 1rem;
+}
+
+.hourly-report-content::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+.hourly-report-content::-webkit-scrollbar-track {
+  background: var(--Neutral-800);
+  margin-block: 1rem;
+}
+
+.hourly-report-content::-webkit-scrollbar-thumb {
+  background: var(--Neutral-600);
+  border-radius: 100vw;
+}
+
+/* 1200px / 16px = 75em */
+@media (max-width: 75em) {
+  .hourly-report-content {
+    max-height: 60rem;
+  }
+}
+
+/* 980px / 16px = 61.25em */
+@media (max-width: 61.25em) {
+}
+
+/* 600px / 16px = 37.5em */
+@media (max-width: 37.5em) {
+}
+
+/* 460px / 16px = 28.75em */
+@media (max-width: 28.75em) {
+}

@@ -1,0 +1,33 @@
+.daily-report-card {
+  background-color: var(--Neutral-800);
+  border: 2px solid var(--Neutral-700);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  min-height: 15rem;
+}
+
+.daily-report-title {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.daily-report-icon {
+  width: 5rem;
+}
+
+.daily-report-temp {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  font-size: 1.4rem;
+}
+
+.daily-max-temp {
+}
+
+.daily-min-temp {
+}
